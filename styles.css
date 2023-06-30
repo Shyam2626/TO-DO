@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color: #090580;
+    font-size: 4rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    background: radial-gradient(circle, #00A8A8, #0C6980);
+    /* background: linear-gradient(to bottom, #00A8A8, #0C6980); */
+    /* background: linear-gradient(to bottom, #003366, #66aaff); */
+}
+
+.content {
+    padding: 3em;
+    margin: 0 auto;
+    width: 40%;
+    height: 28rem;
+     background: url("todobg.webp"); 
+    background-size: cover;
+    /* background-color: #090580; */
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.txt {
+    margin: auto;
+    /* width: 15rem; */
+    width: 60%;
+    height: 3rem;
+    border: 3px solid black;
+    border-radius: 0.50rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.txt:hover{
+    width: 70%;
+    height: 3.10rem;
+    border: 3px solid rgb(8, 142, 244);
+
+}
+
+.btn1 {
+    width: 4rem;
+    height: 2rem;
+    background-color: #333652;
+    margin: 20px auto;
+    border: 1px solid ;
+    padding: 0.5rem;
+    border-radius: 0.20rem;
+    color: #05E0E9;
+    transition: all 0.3s ease;
+}
+
+.btn1:hover{
+    background-color: #0C4160;
+    width:4.25rem;
+    height:2.25rem;
+    color: white;
+}
+
+.ToDoTools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+.ToBeDone{
+    width: 40%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color:rgba(111, 112, 113, 0.539) ;
+    padding:2px;
+    list-style-type: none;
+    font-weight: bolder;
+    border: 3px solid rgb(8, 142, 244);
+    border-radius: 5px;
+    line-height: 30px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+  
+  
+
+@media screen and (max-width:600px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        width: 80%;
+        background: none;
+        /* background-color: black; */
+    }
+
+    .txt {
+        width: 100%;
+    }
+
+    .ToBeDone{
+        width: 100%;
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width:1050px) {
+    
+    .content {
+        width: 60%;
+    }
+
+    .ToBeDone{
+        width: 80%;
+        font-size: x-large;
+    }
+
+}
